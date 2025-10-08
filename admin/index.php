@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'includes/db.php';
 include 'includes/fonksiyon.php';
 
 // Oturum kontrolü: Giriş yapılmadıysa login.php'ye yönlendir
