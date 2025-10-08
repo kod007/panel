@@ -16,7 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->execute([$kullanici]);
         $user = $stmt->fetch();
 
-        if ($user && password_verify($sifre, $user['sifre'])) {
+        // Şifreyi doğrudan kontrol et (hash yok!)
+        if ($user && $sifre === $user['sifre']) {
             $_SESSION['admin_id'] = $user['id'];
             header('Location: index.php');
             exit;
