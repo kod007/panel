@@ -1,9 +1,9 @@
 <?php
 // Veritabanı bağlantı ayarları
 $host = 'localhost';
-$db   = 'panel_db';
-$user = 'root';
-$pass = '';
+$db   = 'rengine1_panel';
+$user = 'rengine1_panel';
+$pass = 'hfwci4d7zx';
 
 // PDO ile bağlantı oluşturma
 try {
